@@ -1,0 +1,13 @@
+{
+  "name": "minimal-ts",
+  "version": "1.0.0",
+  "description": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "esbuild": "0.19.4",
+    "serverless": "3.35.2",
+    "serverless-esbuild": "1.48.4",
+    "typescript": "5.2.2"
+  }
+}

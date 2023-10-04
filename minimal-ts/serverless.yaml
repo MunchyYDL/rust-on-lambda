@@ -1,0 +1,13 @@
+service: minimal-ts
+
+plugins:
+  - serverless-esbuild
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: eu-north-1
+
+functions:
+  handler:
+    handler: src/handler.handler
