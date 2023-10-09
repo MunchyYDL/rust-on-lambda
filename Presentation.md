@@ -25,10 +25,9 @@ It's also a good alternative when needing to interface with C or C++, and you ca
 
 Rust as a language has been used within AWS for years, but it has taken time for them to give support for developers using Rust on their platform.
 
-[Firecracker](https://aws.amazon.com/blogs/aws/firecracker-lightweight-virtualization-for-serverless-computing/)
+_Example_: [Firecracker](https://aws.amazon.com/blogs/aws/firecracker-lightweight-virtualization-for-serverless-computing/)
 
-The SDK has been in experimental status for ever, and now it's in alpha, but it works to start using, and it gives you
-the same capabilities in general as the SDKs for other languages.
+The SDK has been in experimental status for ever, and now it's in alpha, but it works well enough to start using it, and it gives you about the same capabilities in general as the SDKs available for other languages.
 
 It's also very easy to cross-compile Rust code, so you can build for the optimal target in e.g. AWS Lambda.
 
@@ -36,19 +35,38 @@ It's also very easy to cross-compile Rust code, so you can build for the optimal
 
 For both JS/TS and .Net you have quite the runtime to load when running your code, and the garbage collection can cause hiccups.
 
-Rust have no need for a runtime or garbage collector, and can achieve speed compared to C or C++.
+Rust have no need for a runtime or garbage collector, and can achieve speeds in comparison to C or C++.
+
+In particular the native compiled Rust code produces small binaries with a bit of optimizations, and have super low cold start times on AWS Lambda.
 
 [Lambda Cold Starts benchmark](https://maxday.github.io/lambda-perf/)
 
 ## Useful Links and Resources
 
-- [Rust on AWS](https://aws.amazon.com/developer/language/rust/)
-
-- [Serverless-rust](https://www.serverless.com/plugins/serverless-rust)
-- [AWS CDK & Rust](https://dev.to/ryands17/rust-on-lambda-using-the-cdk-3ccm)
-
-- [YouTube - Serverless Rust](https://youtube.com/playlist?list=PLCOG9xkUD90KQ1IPQT_m1NbPRXXRFb63s&si=0iplAKaxlpju9E0G)
-
-- [Shuttle.rs](https://www.shuttle.rs/) - Build Backends, fast.
+**Rust at Polestar**
 
 - Slack channel: [\#rust](https://polestardigiconnect.slack.com/archives/C051Y79EZ6X)
+
+**Rust in general**
+
+- Rust home - https://www.rust-lang.org
+- Rust crates - https://crates.io
+- Rust crates (alt) - https://lib.rs
+- Rust crate documentation - https://docs.rs
+
+**Learning Rust**
+
+- Rustlings - https://github.com/rust-lang/rustlings
+- Shuttle Launchpad - https://www.shuttle.rs/launchpad
+
+**Rust & AWS**
+
+- Rust on AWS - https://aws.amazon.com/developer/language/rust/
+- Serverless-rust - https://www.serverless.com/plugins/serverless-rust
+- AWS CDK & Rust - https://dev.to/ryands17/rust-on-lambda-using-the-cdk-3ccm
+
+- YouTube - Serverless Rust - https://youtube.com/playlist?list=PLCOG9xkUD90KQ1IPQT_m1NbPRXXRFb63s&si=0iplAKaxlpju9E0G
+
+**Fun Rust-related links**
+
+- Rust and i are getting married - https://www.youtube.com/watch?v=UdE8_V05BI8
