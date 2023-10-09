@@ -1,15 +1,16 @@
 service: minimal-rs
 
+# plugins:
+#   - serverless-rust
+
 provider:
   name: aws
   runtime: provided.al2
   region: eu-north-1
 
 package:
-  patterns:
-    - "!./**"
-    - "./bootstrap"
+  individually: true
 
 functions:
   handler:
-    handler: bootstrap
+    handler: minimal-rs

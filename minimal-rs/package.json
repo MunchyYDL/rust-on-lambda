@@ -1,0 +1,11 @@
+{
+  "name": "minimal-rs",
+  "version": "1.0.0",
+  "description": "Minimal Lambda example in Rust",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "serverless": "3.35.2",
+    "serverless-rust": "0.3.8"
+  }
+}
