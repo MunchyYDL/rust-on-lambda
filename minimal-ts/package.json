@@ -1,7 +1,7 @@
 {
   "name": "minimal-ts",
   "version": "1.0.0",
-  "description": "",
+  "description": "Minimal Lambda example in TypeScript",
   "license": "UNLICENSED",
   "private": true,
   "devDependencies": {
